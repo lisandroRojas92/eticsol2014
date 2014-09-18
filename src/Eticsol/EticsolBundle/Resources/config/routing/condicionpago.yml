@@ -1,0 +1,30 @@
+condicionpago:
+    path:     /
+    defaults: { _controller: "EticsolBundle:CondicionPago:index" }
+
+condicionpago_show:
+    path:     /{id}/show
+    defaults: { _controller: "EticsolBundle:CondicionPago:show" }
+
+condicionpago_new:
+    path:     /new
+    defaults: { _controller: "EticsolBundle:CondicionPago:new" }
+
+condicionpago_create:
+    path:     /create
+    defaults: { _controller: "EticsolBundle:CondicionPago:create" }
+    requirements: { _method: post }
+
+condicionpago_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EticsolBundle:CondicionPago:edit" }
+
+condicionpago_update:
+    path:     /{id}/update
+    defaults: { _controller: "EticsolBundle:CondicionPago:update" }
+    requirements: { _method: post|put }
+
+condicionpago_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EticsolBundle:CondicionPago:delete" }
+    requirements: { _method: post|delete }

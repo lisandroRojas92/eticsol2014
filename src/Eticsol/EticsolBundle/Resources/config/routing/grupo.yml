@@ -1,0 +1,30 @@
+grupo:
+    path:     /
+    defaults: { _controller: "EticsolBundle:Grupo:index" }
+
+grupo_show:
+    path:     /{id}/show
+    defaults: { _controller: "EticsolBundle:Grupo:show" }
+
+grupo_new:
+    path:     /new
+    defaults: { _controller: "EticsolBundle:Grupo:new" }
+
+grupo_create:
+    path:     /create
+    defaults: { _controller: "EticsolBundle:Grupo:create" }
+    requirements: { _method: post }
+
+grupo_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EticsolBundle:Grupo:edit" }
+
+grupo_update:
+    path:     /{id}/update
+    defaults: { _controller: "EticsolBundle:Grupo:update" }
+    requirements: { _method: post|put }
+
+grupo_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EticsolBundle:Grupo:delete" }
+    requirements: { _method: post|delete }

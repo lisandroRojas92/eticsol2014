@@ -1,0 +1,42 @@
+EticsolBundle_proveedor:
+        resource: "@EticsolBundle/Resources/config/routing/proveedor.yml"
+        prefix:   /proveedor
+EticsolBundle_grupo:
+        resource: "@EticsolBundle/Resources/config/routing/grupo.yml"
+        prefix:   /grupo
+EticsolBundle_localidad:
+        resource: "@EticsolBundle/Resources/config/routing/localidad.yml"
+        prefix:   /localidad
+EticsolBundle_iva:
+        resource: "@EticsolBundle/Resources/config/routing/iva.yml"
+        prefix:   /iva
+EticsolBundle_provincia:
+        resource: "@EticsolBundle/Resources/config/routing/provincia.yml"
+        prefix:   /provincia
+EticsolBundle_condicionpago:
+        resource: "@EticsolBundle/Resources/config/routing/condicionpago.yml"
+        prefix:   /condicionpago
+EticsolBundle_detalle:
+        resource: "@EticsolBundle/Resources/config/routing/detalle.yml"
+        prefix:   /detalle
+EticsolBundle_factura:
+        resource: "@EticsolBundle/Resources/config/routing/factura.yml"
+        prefix:   /factura
+EticsolBundle_usuario:
+        resource: "@EticsolBundle/Resources/config/routing/usuario.yml"
+        prefix:   /usuario
+        
+eticsol_homepage:
+    path:     /
+    defaults: { _controller: EticsolBundle:Eticsol:inicio }
+ 
+
+
+#inicio:
+ #   path:     /
+  #  defaults: { _controller: EticsolBundle:Eticsol:inicio }
+    
+EticsolBundle_producto:
+        resource: "@EticsolBundle/Resources/config/routing/producto.yml"
+        prefix:   /producto
+

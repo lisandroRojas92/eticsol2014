@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+ {% block n %}
+     
+     <form action="{{path('factura')}}" method ="post" {{ form_enctype(filter_form)}}
+           {{form_widget (filter_form)}}
+           <button type="submint" ><i class="search" ></i> buscar</button
+     </form>
+
+ {% endblock %} 
+ 
+ {% block body %}<p><img SRC="{{asset('bundles/eticsol/images/1.jpg')}}"/> <p>{% endblock %}
+ 
+

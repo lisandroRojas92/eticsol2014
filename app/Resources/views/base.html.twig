@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}SystemasGM{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+         <link rel="stylesheet" type="text/css" href="{{asset('bundles/eticsol/css/Fontend.css')}}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <nav>
+            <a href="{{ path('fos_user_security_logout') }}">Salir</a>
+            <a href="{{path ('eticsol_homepage')}}">INICIO </a>
+           <a href="{{path ('proveedor')}}"> PROVEEDOR</a>
+           <a href="{{path ('provincia')}}"> PROVINCIA</a>
+           <a href="{{path ('condicionpago')}}">CONDICION PAGO</a>
+           <a href="{{path ('iva')}}">IVA</a>
+           <a href="{{path ('localidad')}}"> LOCALIDAD</a>
+           <a href="{{path ('grupo')}}"> GRUPO</a>
+           <a  href="{{path ('factura')}}">FACTURA </a>
+        </nav>
+        <section>
+            {% block body %}{% endblock %}
+            {% block javascripts %}{% endblock %}
+        </section>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="{{asset('bundles/eticsol/css/Fontend.css')}}">
+        <title>{% block title %}Synfony  {%endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+      </head>
+       <header>
+          <a href="{{path ('eticsol_homepage')}}"> <IMG SRC="{{ asset('bundles/eticsol/images/logo.png')}}"/> </a>">
+       </header>
+        <nav>
+            <a href="{{path ('eticsol_homepage')}}">INICIO </a>
+           <a href="{{path ('usuario')}}"> USUARIOS</a>
+           <a href="{{path ('provincia')}}"> PROVINCIA</a>
+           <a href="{{path ('condicionpago')}}">CONDICION PAGO</a>
+           <a href="{{path ('iva')}}">IVA</a>
+           <a href="{{path ('localidad')}}"> LOCALIDAD</a>
+           <a href="{{path ('grupo')}}"> GRUPO</a>
+           <a href="{{path ('factura_new')}}">FACTURA</a>
+           <a href="{{path ('proveedor')}}">PROVEEDOR</a>
+          
+          
+        </nav>
+        <section>
+           <article>
+                 {% block body %}hhh{% endblock %} 
+           </article>
+        </section>
+           <footer>
+               {% block  footer %}<p> Taller symfony 2 -- el saber no ocupa luga --</p>{% endblock %}
+           </footer>
+            {% block javascripts %}{% endblock %}
+   
+</html>#}

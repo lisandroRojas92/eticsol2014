@@ -1,0 +1,30 @@
+proveedor:
+    path:     /
+    defaults: { _controller: "EticsolBundle:Proveedor:index" }
+
+proveedor_show:
+    path:     /{id}/show
+    defaults: { _controller: "EticsolBundle:Proveedor:show" }
+
+proveedor_new:
+    path:     /new
+    defaults: { _controller: "EticsolBundle:Proveedor:new" }
+
+proveedor_create:
+    path:     /create
+    defaults: { _controller: "EticsolBundle:Proveedor:create" }
+    requirements: { _method: post }
+
+proveedor_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "EticsolBundle:Proveedor:edit" }
+
+proveedor_update:
+    path:     /{id}/update
+    defaults: { _controller: "EticsolBundle:Proveedor:update" }
+    requirements: { _method: post|put }
+
+proveedor_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "EticsolBundle:Proveedor:delete" }
+    requirements: { _method: post|delete }
