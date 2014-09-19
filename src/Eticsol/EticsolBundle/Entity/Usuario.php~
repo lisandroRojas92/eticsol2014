@@ -1,0 +1,47 @@
+<?php
+
+namespace Eticsol\EticsolBundle\Entity;
+
+use FOS\UserBundle\Entity\User as FSuser;
+use Doctrine\ORM\Mapping as ORM;
+/**
+ * Usuario
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Usuario extends FSuser
+{
+       
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    
+    protected $username;
+    
+    protected $email;
+    
+    protected $activar;
+    
+    protected $password;
+
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}
